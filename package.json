@@ -3,7 +3,7 @@
 	"displayName": "remove-console",
 	"description": "删除日志",
 	"publisher": "duanlingxue",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.50.0"
 	},
@@ -45,9 +45,9 @@
 		"mocha": "^8.1.3",
 		"typescript": "^4.0.2",
 		"vscode-test": "^1.4.0"
-  },
-  "repository":{
-    "type": "git",
-    "url": "https://github.com/duanlingxue/remove-console"
-  }
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/duanlingxue/remove-console"
+	}
 }
