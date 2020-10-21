@@ -26,10 +26,15 @@ export function activate(context: vscode.ExtensionContext) {
         throw err
       };
       let str = data.toString()
-      str = str.replace(/console.(.+)\((.+)\)/ig,'')
-      fs.writeFile(path,str,()=>{
-    		vscode.window.showInformationMessage('console already remove!');
-      })
+      if(/console.(.+)\((.+)\)/ig.test(str)){
+        str = str.replace(/console.(.+)\((.+)\)/ig,'')
+        fs.writeFile(path,str,()=>{
+          vscode.window.showInformationMessage('console already remove!');
+        })
+      }else{
+        vscode.window.showInformationMessage('have no console');
+      }
+      
     })
 		// Display a message box to the user
 	});
