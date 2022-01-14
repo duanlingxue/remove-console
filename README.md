@@ -6,3 +6,5 @@
 
 删除console日志
 ctrl + k OR  cmd + k
+
+图标
